@@ -1,0 +1,218 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFFFFF;
+    line-height: 1.6;
+    height: 100vh;
+    transition: 1s;
+    background: linear-gradient(45deg, #111, rgb(65, 62, 62));
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 5s infinite alternate;
+}
+
+@keyframes change {
+    0% {
+        background-position: left
+    }
+    100% {
+        background-position: right
+    }
+}
+
+#check {
+    display: none;
+}
+
+#check2 {
+    display: none;
+}
+
+.content{
+    display: none;
+    transition: 0.5s linear;
+}
+
+.content2 {
+    display: none;
+    transition: 0.5s linear;
+}
+
+
+
+p2{
+    font-size: 120%;
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(99, 108, 247);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+p3 {
+    font-size: 120%;
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(178, 247, 99);
+    cursor: pointer;
+    font-weight: 600; 
+}
+
+p4 {
+    font-size: 120%;
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(16, 172, 24);
+    cursor: pointer;
+    font-weight: 600; 
+}
+
+p5 {
+    font-size: 120%;
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(0, 151, 197);
+    cursor: pointer;
+    font-weight: 600; 
+}
+
+
+
+#check:checked ~ .content {
+    display: block;
+}
+
+#check2:checked ~ .content2 {
+    display: block;
+}
+
+
+#check:checked ~label {
+    visibility: hidden;
+}
+
+#check2:checked ~label2 {
+    visibility: hidden;
+}
+
+#check2:checked ~label2:after {
+    content: '▲ Yhteiset osat ▲';
+    display: block;
+    visibility: visible;
+}
+
+#check:checked ~label:after {
+    content: '▲ Ammatilliset osat ▲';
+    display: block;
+    visibility: visible;
+}
+
+
+ul {
+list-style-type: none;
+
+}
+
+a {
+    font-size: 115%;
+    position: relative;
+    text-decoration: none;
+    color: #5e53f5
+    
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+h1,h2 {
+   font-weight: 300;
+   font-size: 200%;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+
+
+
+p {
+    margin: 10px 0;
+    font-size: 115%;
+}
+
+p8 {
+    margin: 10px 0;
+    font-size: 150%
+}
+
+p9 {
+    
+    margin: 10px 0;
+    color: rgb(236, 14, 14);
+    font-size: 150%
+    
+}
+
+
+
+.lolxd p{
+margin: 20px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #111;
+    color: #FFFFFF;
+    height: 70px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+    border-bottom: 2px #fff solid;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+   
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
